@@ -6,6 +6,7 @@ def my_find(collection)
     return collection if yield(collection[i])
     i = i + 1
     end
+    return collection
   end
 
 # my_find(collection) {|1| 1 % 3 == 0 and 1 % 5 == 0 }
